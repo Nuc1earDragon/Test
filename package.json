@@ -1,0 +1,23 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "idap",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nuc1earDragon/Test.git"
+  },
+  "author": "Herasimenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nuc1earDragon/Test/issues"
+  },
+  "homepage": "https://github.com/Nuc1earDragon/Test#readme"
+}
