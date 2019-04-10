@@ -9,82 +9,65 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="test.css">
-    <script>
-        var i=0;
-        function openMenu() {
-            var imgs=new Array('chevron-down-512.png','chevron-down-512_2.png');
-            var visibility=new Array('none','flex');
-            var button = document.getElementById("button_1");
-            i++;
-            i%=imgs.length;
-            var div = document.getElementById("div_1");
-            button.src = imgs[i];
-            div.style.display=visibility[i];
-             }
-    </script>
+        <link rel="stylesheet" href="./dist/test.css">
+    <script src="./dist/test.js"> </script>
     </head>
     <body>
       <div class="left-board">
           <div class="left-board-top">
           <div class="main-photo">
         <img src="./img/rayan.png" class="photo">
-        <div class="index-main-photo"><b>2</b></div>
+        <div class="index index__main-photo background__red"><b>2</b></div>
         </div>
         <div >
-                <a href="#" ><img class="dots" src="./img/3_black_dots_icon.svg_2.png"></a>
-                <a href="#" > <img class="dots" src="./img/3_black_dots_icon.svg_3.png"></a>
+                <a href="#" ><img class="dots" src="./img/3_black_dots_icon.svg_3.png" onmouseover="this.src='./img/3_black_dots_icon.svg_2.png'" onmouseout="this.src='./img/3_black_dots_icon.svg_3.png'"></a>
 
         </div>
-        <div class="flex-container-col" style=" border-left: 3px solid red; width: 97px">
-               <div> <a href="#" style="text-decoration:none"><img  class="meter" src="./img/meter_3.png" ></div>
-                    <div class="board">
+        <div class="flex-container-col left-board-focused" >
+               <a href="#" class="flex-container-col"> <img  class="left-board__image" src="./img/meter_4.png" >
+                    <div class="text-color_white">
                         Board
                     </div></a>
         </div>
         <div >
-                <a href="#" ><img class="dots" src="./img/3_black_dots_icon.svg_2.png"></a>
-                <a href="#" > <img class="dots" src="./img/3_black_dots_icon.svg_3.png"></a>
+                <a href="#" ><img class="dots" src="./img/3_black_dots_icon.svg_3.png" onmouseover="this.src='./img/3_black_dots_icon.svg_2.png'" onmouseout="this.src='./img/3_black_dots_icon.svg_3.png'"></a>
 
         </div>
         <div class="flex-container-col">
-                <a href="#" style="text-decoration:none; display: flex ; flex-direction: column"><img  class="projects-menu" src="./img/190-menu_2.png" style="align-self: center"><img  class="projects-menu" src="./img/190-menu.png" style="position: absolute" >
+                <a href="#" class="flex-container-col" onmouseover="highlightMenu('Projects','Projects_image')" onmouseout="downlightMenu('Projects','Projects_image')"><img  class="left-board__image" src="./img/190-menu.png" id="Projects_image">
         
-                     <div class="projects">
+                     <div class="text-color_grey" id="Projects">
                          Projects
                      </div></a>
-                     <div class="index-board"><b>9</b></div>
+                     <div class="index index__board background__light-grey"><b>9</b></div>
          </div>
          <div >
-                <a href="#" ><img class="dots" src="./img/3_black_dots_icon.svg_2.png"></a>
-                <a href="#" > <img class="dots" src="./img/3_black_dots_icon.svg_3.png"></a>
-
+                <a href="#" ><img class="dots" src="./img/3_black_dots_icon.svg_3.png" onmouseover="this.src='./img/3_black_dots_icon.svg_2.png'" onmouseout="this.src='./img/3_black_dots_icon.svg_3.png'"></a>
         </div>
         <div class="flex-container-col">
-                <a href="#" style="text-decoration:none; display: flex ; flex-direction: column"><img  class="projects-menu" src="./img/149-cog_2.png" style="align-self: center"><img  class="projects-menu" src="./img/149-cog.png" style="position: absolute" >
+                <a href="#" class="flex-container-col" onmouseover="highlightMenu('Settings','Settings_image')" onmouseout="downlightMenu('Settings','Settings_image')"><img  class="left-board__image" src="./img/149-cog.png" id="Settings_image">
         
-                     <div class="projects">
+                     <div class="text-color_grey" id="Settings">
                          Settings
                      </div></a>
          </div>
         </div> 
         <div class="left-board-bottom">
                 <div class="flex-container-col">
-                        <a href="#" style="text-decoration:none; display: flex ; flex-direction: column"><img  class="projects-menu" src="./img/Upgrade_2.png" style="align-self: center"><img  class="projects-menu" src="./img/Upgrade_3.png" style="position: absolute" >
+                        <a href="#" class="flex-container-col" onmouseover="highlightMenu('Upgrade','Upgrade_image')" onmouseout="downlightMenu('Upgrade','Upgrade_image')"><img  class="left-board__image" src="./img/Upgrade.png" id="Upgrade_image">
                 
-                             <div class="projects">
+                             <div class="text-color_grey" id="Upgrade">
                                  Upgrade
                              </div></a>
-                             <div class="index-board" style="background-color:red"><b>9</b></div>
+                             <div class="index index__board background__red"><b>9</b></div>
                  </div>
                  <div >
-                        <a href="#" ><img class="dots" src="./img/3_black_dots_icon.svg_2.png"></a>
-                        <a href="#" > <img class="dots" src="./img/3_black_dots_icon.svg_3.png"></a>
+                    <a href="#" ><img class="dots" src="./img/3_black_dots_icon.svg_3.png" onmouseover="this.src='./img/3_black_dots_icon.svg_2.png'" onmouseout="this.src='./img/3_black_dots_icon.svg_3.png'"></a>
         
                 </div>
                  <div class="flex-container-col">
-                        <div> <a href="#" style="text-decoration:none"><img  class="meter" src="./img/Power - Shut Down.png" ></div>
-                             <div class="board">
+                        <div> <a href="#"><img  class="left-board__image" src="./img/Power - Shut Down.png" ></div>
+                             <div class="text-color_white">
                                  Logout
                              </div></a>
                  </div>
@@ -92,12 +75,12 @@
       </div>
       <div class="dashboard1">
           <div class="flex-container">
-                <a href="#" class="simple-button" style="background-color:red"><img src="./img/return.png" width="16px" height="16px" style="filter: brightness(0) invert(1)"></a>
+                <a href="#" class="simple-button background__red"><img src="./img/return.png" style="filter: brightness(0) invert(1)"></a>
               <a href="#" class="dropdown-button" ><b>Dashboard</b></a>
           </div>
           <div class="flex-container">
-                <a href="#" class="simple-button" style="background-color:#04B431"><img src="./img/chevron-down-512.png" width="16px" height="16px" style="transform: scale(-1, 1); filter: brightness(0) invert(1) "></a>
-                <a href="#" class="dropdown-button" >&nbsp;<img class="bubbles" src="./img/113-bubbles4.png" >&nbsp;&nbsp;<b>5 USERS ONLINE</b> &nbsp;&nbsp; <img src="./img/chevron-down-512.png" height="16px" width="16px" style="margin-bottom: -6px "> &nbsp;</a>
+                <a href="#" class="simple-button" style="background-color:#04B431"><img src="./img/chevron-down-512.png" style="transform: scale(-1, 1); filter: brightness(0) invert(1) "></a>
+                <a href="#" class="dropdown-button" >&nbsp;<img class="bubbles" src="./img/113-bubbles4.png" >&nbsp;&nbsp;<b>5 USERS ONLINE</b> &nbsp;&nbsp; <img src="./img/chevron-down-512.png"> &nbsp;</a>
           </div>
       </div>
       <div class="dashboard2">
@@ -105,13 +88,13 @@
                 <a href="#" class="active-projects">
                     <img src="./img/3571-200.png" height="30px" width="30px" class="clock">
                       Active Projects
-                      <div class="index" style="background-color : #848484"><b>9</b></div>
+                      <div class="index index__center background__grey"><b>9</b></div>
                 </a>
            
                     <a href="#" class="messenger">
                             <img src="./img/svg-512.png" height="34px" width="34px" class="telegram">
                         Messenger
-                        <div class="index"><b>2</b></div>
+                        <div class="index index__center background__red"><b>2</b></div>
                     </a>
             
                  <div class="search-table-1">
@@ -119,310 +102,309 @@
                  </div> 
         <div class="flex-container-center">
         <div class="flex-container-col-center">
-       <div class="search-table-2">
-            
-                    <input type="search" class="list" placeholder="Search a project with Name, Task, User...">
+       <div class="center-board center-board__search">
+                    <input type="search" class="center__search" placeholder="Search a project with Name, Task, User...">
                     <div class="flex-container">
-                        <a href="#" class="dropdown-button" ><b>New Projects</b> (descending) &nbsp;&nbsp; <img src="./img/chevron-down-512.png" height="16px" width="16px" style="margin-bottom: -6px ">&nbsp;</a>
-                        <a href="#" class="simple-button" style="background-color:red" ><b>+</b> </a>
+                        <a href="#" class="dropdown-button" ><b>New Projects</b> (descending) &nbsp;&nbsp; <img src="./img/chevron-down-512.png" >&nbsp;</a>
+                        <a href="#" class="simple-button background__red"><b>+</b> </a>
                     </div>
         </div>
         <div class="center">
         <div class="center-board">
-            <div class="flex-container" style="padding: 0 0 0 10px ">
+            <div class="flex-container">
                 <div class="persent">23%</div>
                 <div class="project">Create Conact Formular</div>
             </div>   
             <div class="flex-container">
                 <a href="#" class="dropdown-button"><b>WORLDA</b></a>
-                <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
-                <a href="#" class="simple-button-center"><img src="./img/chevron-down-512.png" height="16px" width="16px" ></a>
+                <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png"></a>
+                <a href="#" class="simple-button center__button"><img src="./img/chevron-down-512.png" ></a>
             </div>
         </div>
         <div class="center-board">
-                <div class="flex-container" style="padding: 0 0 0 10px ">
+                <div class="flex-container">
                         <div class="persent">87%</div>
                         <div class="project">Create Subpage PSD</div>
                     </div>   
                     <div class="flex-container">
                         <a href="#" class="dropdown-button"><b>PANORAMA</b></a>
-                        <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
-                        <a href="#" class="simple-button-center"><img src="./img/chevron-down-512.png" height="16px" width="16px"> </a>
+                        <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/chevron-down-512.png" > </a>
                     </div>
         </div>
         <div class="center-board">
-                <div class="flex-container" style="padding: 0 0 0 10px ">
+                <div class="flex-container" >
                         <div class="persent">83%</div>
                         <div class="project">Layout&implementation in HTML & CSS</div>
                     </div>   
                     <div class="flex-container">
                         <a href="#" class="dropdown-button"><b>EBAY RELAUNCH</b></a>
-                        <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
-                        <a href="#"  class="simple-button-center" onclick="openMenu()" ><img id="button_1" src="./img/chevron-down-512.png" width="16px" height="16px" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
+                        <a href="#"  class="simple-button center__button" onclick="openMenu()" ><img id="button_1" src="./img/chevron-down-512.png" ></a>
                     </div>
                 
         </div>
-        <div class="center-board" id="div_1" style="display: none ; flex-direction:column ; background-color: red ; min-height: 141px;">
-                <div class="center-board" style=" background-color: #FAFAFA">
-                        <div class="flex-container" style="padding: 0 0 0 10px ">
-                                <div class="persent-done">66%</div>
-                                <div class="project-done">Creating the context</div>
+        <div class="center-board " id="div_1">
+                <div class="center-board  no-padding" >
+                        <div class="flex-container">
+                                <div class="persent persent-done">66%</div>
+                                <div class="project project-done">Creating the context</div>
                             </div>   
                             <div class="flex-container">
-                                    <div style="position:relative ; margin: 0 3px 0 3px;">
-                                            <a href="#"><img src="./img/guy_1.png" class="small-photo" style="margin: 3px 0 0 0"></a>
-                                            <div class="circle" style="margin: -38px 0 0 0"></div>
+                                    <div class="small-photo__container">
+                                            <a href="#"><img src="./img/guy_1.png" class="small-photo" ></a>
+                                            <div class="circle circle__center__margin" ></div>
                                         </div>
-                                        <div style="position:relative; margin: 0 3px 0 3px;">
-                                                <a href="#"> <img src="./img/rayan.png" class="small-photo" style="margin: 3px 0 0 0"></a>
-                                                <div class="circle" style="background-color: #01DF01 ; margin: -38px 0 0 0"></div>
+                                        <div class="small-photo__container">
+                                                <a href="#"> <img src="./img/rayan.png" class="small-photo" ></a>
+                                                <div class="circle circle__center__margin background__light-green"></div>
                                             </div>
-                                            <div style="position:relative; margin: 0 3px 0 3px;">
-                                                    <a href="#">  <img src="./img/guy_3.png" class="small-photo" style="margin: 3px 0 0 0"></a>
-                                                    <div class="circle" style="background-color: yellow; margin: -38px 0 0 0""></div>
+                                            <div class="small-photo__container">
+                                                    <a href="#">  <img src="./img/guy_3.png" class="small-photo" ></a>
+                                                    <div class="circle circle__center__margin background__yellow"></div>
                                                 </div>
-                                                <a href="#" class="simple-button-center" >+3</a>
-                                <a href="#" class="dropdown-button"><img src="./img/return.png" style="transform: scale(-1 , 1); margin-bottom: -2px " width="12px" height="12px" >&nbsp;<b>TODAY,</b>&nbsp; 13:40PM</a>
-                                <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
+                                                <a href="#" class="simple-button center__button" >+3</a>
+                                <a href="#" class="dropdown-button"><img src="./img/return.png" style="transform: scale(-1 , 1)" >&nbsp;<b>TODAY,</b>&nbsp; 13:40PM</a>
+                                <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
                             </div>
                 </div>
-                <div class="center-board" style=" background-color: #FAFAFA">
-                        <div class="flex-container" style="padding: 0 0 0 10px ">
+                <div class="center-board no-padding">
+                        <div class="flex-container">
                                 <div class="ready">READY</div>
-                                <div class="project-done"><span style="text-decoration: line-through">Implementation in the Layout </span> ✔</div>
+                                <div class="project project-done"><span style="text-decoration: line-through">Implementation in the Layout </span> ✔</div>
                             </div>   
                             <div class="flex-container">
-                                    <div style="position:relative; margin: 0 3px 0 3px;">
-                                            <a href="#"> <img src="./img/rayan.png" class="small-photo" style="margin: 3px 0 0 0"></a>
-                                            <div class="circle" style="background-color: #01DF01 ; margin: -38px 0 0 0"></div>
+                                    <div class="small-photo__container">
+                                            <a href="#"> <img src="./img/rayan.png" class="small-photo" ></a>
+                                            <div class="circle circle__center__margin background__light-green"></div>
                                         </div>
-                                        <div style="position:relative; margin: 0 3px 0 3px;">
-                                                <a href="#">  <img src="./img/guy_3.png" class="small-photo" style="margin: 3px 0 0 0"></a>
-                                                <div class="circle" style="background-color: yellow; margin: -38px 0 0 0""></div>
+                                        <div class="small-photo__container">
+                                                <a href="#">  <img src="./img/guy_3.png" class="small-photo" ></a>
+                                                <div class="circle circle__center__margin background__yellow"></div>
                                             </div>
-                                <a href="#" class="dropdown-button"><img src="./img/return.png" style="transform: scale(-1 , 1); margin-bottom: -2px " width="12px" height="12px"  >&nbsp;<b>YESTERDAY,</b>&nbsp; 12:40PM</a>
-                                <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
+                                <a href="#" class="dropdown-button"><img src="./img/return.png" style="transform: scale(-1 , 1)"  >&nbsp;<b>YESTERDAY,</b>&nbsp; 12:40PM</a>
+                                <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
                             </div>
                 </div>
         </div>
         <div class="center-board">
-                <div class="flex-container" style="padding: 0 0 0 10px ">
+                <div class="flex-container" >
                         <div class="persent">23%</div>
                         <div class="project"><p>Lorem ipsum dolor sit amet, elitr, sed, diam <br> nonumy eirmod tempor</p></div>
                     </div>   
                     <div class="flex-container">
                         <a href="#" class="dropdown-button"><b>PANORAMA</b></a>
-                        <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
-                        <a href="#" class="simple-button-center"><img src="./img/chevron-down-512.png" height="16px" width="16px" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/chevron-down-512.png" ></a>
                     </div>
         </div>
         <div class="center-board">
-                <div class="flex-container" style="padding: 0 0 0 10px ">
+                <div class="flex-container" >
                         <div class="persent">98%</div>
                         <div class="project">Create Conact Formular</div>
                     </div>   
                     <div class="flex-container">
                         <a href="#" class="dropdown-button"><b>WORLDA</b></a>
-                        <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
-                        <a href="#" class="simple-button-center"><img src="./img/chevron-down-512.png" height="16px" width="16px" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/chevron-down-512.png" ></a>
                     </div>
         </div>
         <div class="center-board">
-                <div class="flex-container" style="padding: 0 0 0 10px ">
+                <div class="flex-container" >
                         <div class="persent">75%</div>
                         <div class="project">Create Conact Formular</div>
                     </div>   
                     <div class="flex-container">
                         <a href="#" class="dropdown-button"><b>WORLDA</b></a>
-                        <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
-                        <a href="#" class="simple-button-center"><img src="./img/chevron-down-512.png" height="16px" width="16px" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/chevron-down-512.png" ></a>
                     </div>
         </div>
         <div class="center-board">
-                <div class="flex-container" style="padding: 0 0 0 10px ">
+                <div class="flex-container" >
                         <div class="persent">60%</div>
                         <div class="project">Create Conact Formular</div>
                     </div>   
                     <div class="flex-container">
                         <a href="#" class="dropdown-button"><b>WORLDA</b></a>
-                        <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
-                        <a href="#" class="simple-button-center"><img src="./img/chevron-down-512.png" height="16px" width="16px" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/chevron-down-512.png" ></a>
                     </div>
         </div>
         <div class="center-board">
-                <div class="flex-container" style="padding: 0 0 0 10px ">
+                <div class="flex-container">
                         <div class="persent">50%</div>
                         <div class="project">Create Conact Formular</div>
                     </div>   
                     <div class="flex-container">
                         <a href="#" class="dropdown-button"><b>WORLDA</b></a>
-                        <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
-                        <a href="#" class="simple-button-center"><img src="./img/chevron-down-512.png" height="16px" width="16px" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/chevron-down-512.png" ></a>
                     </div>
         </div>
         <div class="center-board">
-                <div class="flex-container" style="padding: 0 0 0 10px ">
+                <div class="flex-container" >
                         <div class="persent">40%</div>
                         <div class="project">Create Conact Formular</div>
                     </div>   
                     <div class="flex-container">
                         <a href="#" class="dropdown-button"><b>WORLDA</b></a>
-                        <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
-                        <a href="#" class="simple-button-center"><img src="./img/chevron-down-512.png" height="16px" width="16px" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/chevron-down-512.png" ></a>
                     </div>
         </div>
         <div class="center-board">
-                <div class="flex-container" style="padding: 0 0 0 10px ">
+                <div class="flex-container" >
                         <div class="persent">20%</div>
                         <div class="project">Create Conact Formular</div>
                     </div>   
                     <div class="flex-container">
                         <a href="#" class="dropdown-button"><b>WORLDA</b></a>
-                        <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
-                        <a href="#" class="simple-button-center"><img src="./img/chevron-down-512.png" height="16px" width="16px" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/chevron-down-512.png" ></a>
                     </div>
         </div>
         <div class="center-board">
-                <div class="flex-container" style="padding: 0 0 0 10px ">
+                <div class="flex-container" >
                         <div class="persent">15%</div>
                         <div class="project">Create Conact Formular</div>
                     </div>   
                     <div class="flex-container">
                         <a href="#" class="dropdown-button"><b>WORLDA</b></a>
-                        <a href="#" class="simple-button-center"><img src="./img/698627-icon-111-search-512.png" height="16px" width="16px"></a>
-                        <a href="#" class="simple-button-center"><img src="./img/chevron-down-512.png" height="16px" width="16px" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/698627-icon-111-search-512.png" ></a>
+                        <a href="#" class="simple-button center__button"><img src="./img/chevron-down-512.png" ></a>
                     </div>
         </div>
     </div>
     <div class="arhive">
-        <a href="#" style="text-decoration: none ; color: inherit">&nbsp;&nbsp;Project Archive <img src="./img/chevron-down-512_right.png" height="12px" width="12px" style="margin : 0 0  -1px 0"></a>
+        <a href="#" >&nbsp;&nbsp;Project Archive <img src="./img/chevron-down-512_right.png" ></a>
     </div>
        </div>
 <div class="flex-container-col-news" style="overflow: hidden">
         <div class="flex-container-col-news" style="margin: 0 0 0 0 ">
         <div class="news">
-            <div style="position:relative">
+            <div class="mid-photo__container">
                 <a href="#"><img src="./img/guy_1.png" class="mid-photo"></a>
                 <div class="circle"></div>
             </div>
-            <div class="flex-container-row" style="margin: 0 0 0 10px">
-                <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Mark P.</a></b> add an Image into Worlda</div>
-                <div class="news_date">TODAY, 10:30 PM</div>
+            <div class="news__text__conteiner">
+                <div class="news__text"><b><a href="#" class="names">Mark P.</a></b> add an Image into Worlda</div>
+                <div class="news__date">TODAY, 10:30 PM</div>
             </div>
         </div>
         <div class="news">
-                <div style="position:relative">
+                <div class="mid-photo__container">
                         <a href="#"> <img src="./img/guy_2.png" class="mid-photo"></a>
-                        <div class="circle" style="background-color:#01DF01"></div>
+                        <div class="circle background__light-green"></div>
                     </div>
-                    <div class="flex-container-row" style="margin: 0 0 0 10px">
-                        <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Marvin S.</a></b> add an Image into Worlda</div>
-                        <div class="news_date">TODAY, 10:30 PM</div>
+                    <div class="news__text__conteiner">
+                        <div class="news__text"><b><a href="#" class="names">Marvin S.</a></b> add an Image into Worlda</div>
+                        <div class="news__date">TODAY, 10:30 PM</div>
                     </div>
             </div>
             <div class="news">
-                    <div style="position:relative">
+                    <div class="mid-photo__container">
                             <a href="#">  <img src="./img/guy_3.png" class="mid-photo"></a>
-                            <div class="circle" style="background-color: yellow "></div>
+                            <div class="circle background__yellow"></div>
                         </div>
-                        <div class="flex-container-row" style="margin: 0 0 0 10px">
-                            <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Sebastian K.</a></b> add an Image into Worlda</div>
-                            <div class="news_date">TODAY, 10:30 PM</div>
+                        <div class="news__text__conteiner">
+                            <div class="news__text"><b><a href="#" class="names">Sebastian K.</a></b> add an Image into Worlda</div>
+                            <div class="news__date">TODAY, 10:30 PM</div>
                         </div>
                 </div>
                 <div class="news">
-                        <div style="position:relative">
+                        <div class="mid-photo__container">
                                 <a href="#"> <img src="./img/rayan.png" class="mid-photo"></a>
-                                <div class="circle" style="background-color: #01DF01"></div>
+                                <div class="circle background__light-green"></div>
                             </div>
-                            <div class="flex-container-row" style="margin: 0 0 0 10px">
-                                <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Philip O.</a></b> add an Image into Worlda</div>
-                                <div class="news_date">TODAY, 10:30 PM</div>
+                            <div class="news__text__conteiner">
+                                <div class="news__text"><b><a href="#" class="names">Philip O.</a></b> add an Image into Worlda</div>
+                                <div class="news__date">TODAY, 10:30 PM</div>
                             </div>
                     </div>
                     <div class="news">
-                            <div style="position:relative">
+                            <div class="mid-photo__container">
                                     <a href="#">  <img src="./img/guy_1.png" class="mid-photo"></a>
                                     <div class="circle"></div>
                                 </div>
-                                <div class="flex-container-row" style="margin: 0 0 0 10px">
-                                    <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Mark P.</a></b> add an Image into Worlda</div>
-                                    <div class="news_date">TODAY, 10:30 PM</div>
+                                <div class="news__text__conteiner">
+                                    <div class="news__text"><b><a href="#" class="names">Mark P.</a></b> add an Image into Worlda</div>
+                                    <div class="news__date">TODAY, 10:30 PM</div>
                                 </div>
                         </div>
                         <div class="news">
-                                <div style="position:relative">
+                                <div class="mid-photo__container">
                                         <a href="#">  <img src="./img/guy_2.png" class="mid-photo"></a>
-                                        <div class="circle" style="background-color: #01DF01"></div>
+                                        <div class="circle background__light-green"></div>
                                     </div>
-                                    <div class="flex-container-row" style="margin: 0 0 0 10px">
-                                        <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Marvin S.</a></b> add an Image into Worlda</div>
-                                        <div class="news_date">TODAY, 10:30 PM</div>
+                                    <div class="news__text__conteiner">
+                                        <div class="news__text"><b><a href="#" class="names">Marvin S.</a></b> add an Image into Worlda</div>
+                                        <div class="news__date">TODAY, 10:30 PM</div>
                                     </div>
                             </div>
                             <div class="news">
-                                    <div style="position:relative">
+                                    <div class="mid-photo__container">
                                             <a href="#"><img src="./img/guy_3.png" class="mid-photo"></a>
-                                            <div class="circle" style="background-color: yellow "></div>
+                                            <div class="circle background__yellow"></div>
                                         </div>
-                                        <div class="flex-container-row" style="margin: 0 0 0 10px">
-                                            <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Sebastian K.</a></b> add an Image into Worlda</div>
-                                            <div class="news_date">TODAY, 10:30 PM</div>
+                                        <div class="news__text__conteiner">
+                                            <div class="news__text"><b><a href="#" class="names">Sebastian K.</a></b> add an Image into Worlda</div>
+                                            <div class="news__date">TODAY, 10:30 PM</div>
                                         </div>
                                 </div>
                                 <div class="news">
-                                        <div style="position:relative">
+                                        <div class="mid-photo__container">
                                                 <a href="#">  <img src="./img/rayan.png" class="mid-photo"></a>
-                                                <div class="circle" style="background-color: #01DF01"></div>
+                                                <div class="circle background__light-green" ></div>
                                             </div>
-                                            <div class="flex-container-row" style="margin: 0 0 0 10px">
-                                                <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Philip O.</a></b> add an Image into Worlda</div>
-                                                <div class="news_date">TODAY, 10:30 PM</div>
+                                            <div class="news__text__conteiner">
+                                                <div class="news__text"><b><a href="#" class="names">Philip O.</a></b> add an Image into Worlda</div>
+                                                <div class="news__date">TODAY, 10:30 PM</div>
                                             </div>
                                     </div>
                                     <div class="news">
-                                            <div style="position:relative">
+                                            <div class="mid-photo__container">
                                                     <a href="#">  <img src="./img/guy_1.png" class="mid-photo"></a>
                                                     <div class="circle"></div>
                                                 </div>
-                                                <div class="flex-container-row" style="margin: 0 0 0 10px">
-                                                    <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Mark P.</a></b> add an Image into Worlda</div>
-                                                    <div class="news_date">TODAY, 10:30 PM</div>
+                                                <div class="news__text__conteiner">
+                                                    <div class="news__text"><b><a href="#" class="names">Mark P.</a></b> add an Image into Worlda</div>
+                                                    <div class="news__date">TODAY, 10:30 PM</div>
                                                 </div>
                                         </div>
                                         <div class="news">
-                                                <div style="position:relative">
+                                                <div class="mid-photo__container">
                                                         <a href="#">  <img src="./img/guy_2.png" class="mid-photo"></a>
-                                                        <div class="circle" style="background-color:#01DF01"></div>
+                                                        <div class="circle background__light-green" ></div>
                                                     </div>
-                                                    <div class="flex-container-row" style="margin: 0 0 0 10px">
-                                                        <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Marvin S.</a></b> add an Image into Worlda</div>
-                                                        <div class="news_date">TODAY, 10:30 PM</div>
+                                                    <div class="news__text__conteiner">
+                                                        <div class="news__text"><b><a href="#" class="names">Marvin S.</a></b> add an Image into Worlda</div>
+                                                        <div class="news__date">TODAY, 10:30 PM</div>
                                                     </div>
                                             </div>
                                             <div class="news">
-                                                    <div style="position:relative">
+                                                    <div class="mid-photo__container">
                                                             <a href="#">  <img src="./img/guy_3.png" class="mid-photo"></a>
-                                                            <div class="circle" style="background-color: yellow "></div>
+                                                            <div class="circle background__yellow"></div>
                                                         </div>
-                                                        <div class="flex-container-row" style="margin: 0 0 0 10px">
-                                                            <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Sebastian K.</a></b> add an Image into Worlda</div>
-                                                            <div class="news_date">TODAY, 10:30 PM</div>
+                                                        <div class="news__text__conteiner">
+                                                            <div class="news__text"><b><a href="#" class="names">Sebastian K.</a></b> add an Image into Worlda</div>
+                                                            <div class="news__date">TODAY, 10:30 PM</div>
                                                         </div>
                                                 </div>
                                                 <div class="news">
-                                                        <div style="position:relative">
+                                                        <div class="mid-photo__container">
                                                                 <a href="#">  <img src="./img/rayan.png" class="mid-photo"></a>
-                                                                <div class="circle" style="background-color:#01DF01"></div>
+                                                                <div class="circle background__light-green" ></div>
                                                             </div>
-                                                            <div class="flex-container-row" style="margin: 0 0 0 10px">
-                                                                <div class="news_text"><b><a href="#" style="text-decoration: none; color:inherit">Philip O.</a></b> add an Image into Worlda</div>
-                                                                <div class="news_date">TODAY, 10:30 PM</div>
+                                                            <div class="news__text__conteiner">
+                                                                <div class="news__text"><b><a href="#" class="names">Philip O.</a></b> add an Image into Worlda</div>
+                                                                <div class="news__date">TODAY, 10:30 PM</div>
                                                             </div>
                                                     </div>
          </div>
          <div class="arhive">
-                <a href="#" style="text-decoration: none ; color: inherit">&nbsp;&nbsp;Activity Archive <img src="./img/chevron-down-512_right.png" height="12px" width="12px" style="margin : 0 0  -1px 0"></a>
+                <a href="#">&nbsp;&nbsp;Activity Archive <img src="./img/chevron-down-512_right.png" ></a>
             </div>
          </div>
         </div>

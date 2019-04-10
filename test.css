@@ -5,14 +5,11 @@ body {
     margin: 0;
 
 }
-tr {
-    padding: 0px;
-}
-td {
-    padding: 0px;
-    vertical-align: middle;
-}
 input[type="search"]:focus { outline: none; }
+
+a {
+  text-decoration: none;
+}
 
 ::-webkit-input-placeholder {
     color:    #D8D8D8;
