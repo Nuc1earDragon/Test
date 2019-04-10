@@ -360,7 +360,7 @@ padding: 0 20px;
   }
 .center-board {
   @include flex(flex,auto ,center ,space-between );
-  @include board(70px,calc( 100% - 40px) ,70px ,540px ,auto );
+  @include board(70px,calc( 100% - 40px) ,70px ,530px ,auto );
     background-color: white;
     border-bottom: 1px solid #E6E6E6;
     padding: 0px 20px;
@@ -381,7 +381,7 @@ padding: 0 20px;
 }
 .center {
   @include flex(flex, column, auto, flex-start);
-  @include board(100%,100% ,305px ,540px ,auto );
+  @include board(100%, calc( 100% + 1px)  ,305px ,535px ,auto );
     overflow-y: scroll;
 }
 
