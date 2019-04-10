@@ -85,6 +85,7 @@ a {
 .dropdown-button {
   @include flex(flex,row,center,center);
   @include button(1px solid #CCCCCC, 0 10px 0 10px  , 0px 5px , 10px, #555555);
+  flex-shrink: 0;
 }
 
 .dropdown-button img {
@@ -264,11 +265,10 @@ padding: 0 20px;
 }
 
 .center__search {
-    min-width: 330px;
+    min-width: 320px;
     font: 400 12pt Arial;
     background-color: white;
     cursor: text;
-    padding: 0 0 0 20px;
     border-width: 0px;
     border-spacing: 5px;
 }
@@ -289,6 +289,7 @@ padding: 0 20px;
   }
   .flex-container-center {
     @include flex(flex, row , auto , flex-start );
+    min-width: 924px;
     min-height: 415px;
     height: calc( 100% - 185px);
   }
@@ -435,6 +436,7 @@ padding: 0 20px;
          padding: 0 5px 0 5px;
 }
 .project{
+  min-width: 150px;
     font-size: 14px;
     font-weight: 550;
     color: #6E6E6E;
